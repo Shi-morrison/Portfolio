@@ -1,31 +1,41 @@
 <script setup lang="ts">
+
+// Imports necessary libraries and functionalities.
 import { Icon } from "@iconify/vue";
 import { ref, onMounted, onUnmounted } from 'vue';
+
+// Determines if the navbar is currently visible.
 const isNavbarVisible = ref(false);
+
+// Determines if the view is mobile based on a width breakpoint.
 const isMobile = ref(window.innerWidth <= 768);  // Use 768px as breakpoint, can be adjusted
 
+// Holds the timeout for hiding the navbar, allowing it to be cleared if necessary.
 let hideTimeout: number | null = null;
 
-// Toggle Navbar
+// Toggles the visibility of the navbar for mobile views.
 const toggleNavbar = () => {
     if (isMobile.value) {
         isNavbarVisible.value = !isNavbarVisible.value;
     }
 };
 
-// Update Mobile status on window resize
+// Updates the mobile status based on window width.
 const updateMobileStatus = () => {
     isMobile.value = window.innerWidth <= 768;
 };
 
+// Add a listener for window resizing when the component is mounted.
 onMounted(() => {
     window.addEventListener('resize', updateMobileStatus);
 });
 
+// Remove the resize listener when the component is unmounted to prevent memory leaks.
 onUnmounted(() => {
     window.removeEventListener('resize', updateMobileStatus);
 });
 
+// Show the navbar on hover for non-mobile views.
 const showNavbar = () => {
     if (!isMobile.value) {
         isNavbarVisible.value = true;
@@ -35,6 +45,7 @@ const showNavbar = () => {
     }
 };
 
+// Hide the navbar with a delay after the mouse leaves for non-mobile views.
 const hideNavbar = () => {
     if (!isMobile.value) {
         if (hideTimeout) {
@@ -45,6 +56,8 @@ const hideNavbar = () => {
         }, 500); // This gives the user 500ms to move to the navbar after leaving the hover-trigger
     }
 };
+
+// Clears any active timeouts for hiding the navbar.
 const clearHideTimeout = () => {
     if (hideTimeout) {
         clearTimeout(hideTimeout);
@@ -53,10 +66,10 @@ const clearHideTimeout = () => {
 </script>
 
 <template>
-    <!-- Hover trigger for large screens -->
+    <!-- Hover-trigger div for desktop views. Displayed when the viewport is not mobile-sized. -->
     <div v-if="!isMobile" @mouseenter="showNavbar" @mouseleave="hideNavbar" class="hover-trigger"></div>
 
-    <!-- Hamburger button -->
+    <!-- Hamburger menu button, displayed only for mobile views. -->
     <button v-if="isMobile" class="hamburger hamburger--collapse absolute top-4 right-0 z-10" type="button"
         :class="{ 'is-active': isNavbarVisible }" @click="toggleNavbar">
         <span class="hamburger-box">
@@ -64,10 +77,12 @@ const clearHideTimeout = () => {
         </span>
     </button>
 
+    <!-- Main navigation, wrapped in a transition for animation effects. -->
     <transition name="slide-fade-right">
         <nav v-show="isNavbarVisible" @mouseenter="clearHideTimeout" @mouseleave="hideNavbar"
             class="p-4 absolute right-0 h-full">
 
+            <!-- List of navigation links and icons. -->
             <ul class="flex flex-col space-y-8 text-primary h-full justify-center items-center">
                 <li><a href="#home" class=" hvr-bob hover:text-white">
                         <Icon icon="ic:baseline-home" width="35" />
@@ -103,7 +118,7 @@ const clearHideTimeout = () => {
     </transition>
 </template>
 
-<style scoped> /* Hamburger button styles */
+<style scoped> /* Styling for the hamburger menu button */
  .hamburger {
      background: none;
      /* Remove background */
@@ -111,7 +126,7 @@ const clearHideTimeout = () => {
      /* Remove border if any */
  }
 
- /* Starting state for entering and leaving */
+ /* Define the start and end states for the slide-fade-right transition for navbar animations */
  .slide-fade-right-enter,
  .slide-fade-right-leave-to {
      transform: translateX(100%);
@@ -130,12 +145,13 @@ const clearHideTimeout = () => {
      opacity: 1;
  }
 
- /* Transitions */
+ /* Transition effects for the navbar's entrance and exit animations */
  .slide-fade-right-enter-active,
  .slide-fade-right-leave-active {
      transition: opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
  }
 
+ /* Invisible trigger for showing the navbar when hovered, for desktop views */
  .hover-trigger {
      width: 50px;
      height: 50%;
@@ -149,7 +165,7 @@ const clearHideTimeout = () => {
 
  }
 
- /* Use media query to hide the hamburger on larger screens */
+ /* Media query to hide the hamburger button on larger screens */
  @media (min-width: 769px) {
 
      /* Adjust 769px to the breakpoint you want */
@@ -158,6 +174,7 @@ const clearHideTimeout = () => {
      }
  }
 
+ /* Set the z-index for the main navbar to ensure it appears above other content */
  nav {
      z-index: 9;
      /* or a value higher than any other z-index in your project */
