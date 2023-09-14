@@ -8,9 +8,9 @@
     </button>
 
     <!-- Main navigation -->
-    <nav v-show="isNavbarVisible" class="p-4 absolute right-0 h-full navbar-content">
+    <nav v-show="isNavbarVisible" class="p-4 absolute right-0 h-full navbar">
         <!-- List of navigation links and icons. -->
-        <ul class="flex flex-col space-y-8 text-primary h-full justify-center items-center">
+        <ul class="flex flex-col space-y-8 text-primary h-full justify-center items-center navbar-content">
             <li><a href="#home" class=" hvr-bob hover:text-white">
                     <Icon icon="ic:baseline-home" width="35" />
 
@@ -61,6 +61,14 @@ const toggleNavbar = () => {
     border: none;
 }
 
+.navbar-content {
+    background: rgba(0, 0, 0, .1);
+    /* height: 17.7rem; */
+    backdrop-filter: blur(50px);
+    transform: translateY(-50px);
+    transition: .3s ease;
+
+}
 
 nav {
     z-index: 9;
