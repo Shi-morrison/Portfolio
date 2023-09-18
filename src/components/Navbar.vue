@@ -31,7 +31,7 @@
                     </svg></a>
             </li>
             <li><a href="https://github.com/Shi-morrison" target="_blank" rel="noopener noreferrer"
-                    class="hvr-bob hover:text-white">
+                    class="hvr-bob hover:text-white" style="--i:0">
                     <svg class="h-6 w-6 hover:opacity-80 " xmlns="http://www.w3.org/2000/svg" width="98" height="96"
                         viewBox="0 0 98 96">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -61,14 +61,7 @@ const toggleNavbar = () => {
     border: none;
 }
 
-.navbar-content {
-    background: rgba(0, 0, 0, .1);
-    /* height: 17.7rem; */
-    backdrop-filter: blur(50px);
-    transform: translateY(-50px);
-    transition: .3s ease;
 
-}
 
 nav {
     z-index: 9;
