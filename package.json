@@ -16,7 +16,8 @@
     "jquery": "^3.7.1",
     "letteringjs": "^0.7.0",
     "react-icons": "^4.10.1",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.19",

@@ -9,6 +9,8 @@ import Introduction from './components/Introduction.vue'
 <template>
   <Navbar></Navbar>
 
+  <Introduction></Introduction>
+
   <div id="home">
     <Home></Home>
   </div>
