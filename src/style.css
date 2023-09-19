@@ -11,6 +11,13 @@
   box-sizing: border-box;
 }
 
+#introduction,
+#projects,
+#backround {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 html {
   font-size: 100%;

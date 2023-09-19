@@ -8,11 +8,11 @@ import Introduction from './components/Introduction.vue'
 
 <template>
   <Navbar></Navbar>
-
-  <Introduction></Introduction>
-
-  <div id="home">
+  <div id="backround">
     <Home></Home>
+  </div>
+  <div id="introduction">
+    <Introduction></Introduction>
   </div>
   <div id="projects">
     <Projects></Projects>

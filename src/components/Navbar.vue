@@ -48,6 +48,7 @@
 import { Icon } from "@iconify/vue";
 import { ref } from 'vue';
 
+
 const isNavbarVisible = ref(false);
 
 const toggleNavbar = () => {

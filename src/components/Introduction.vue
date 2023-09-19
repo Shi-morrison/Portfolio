@@ -1,5 +1,5 @@
 <script >
-
+import Home from './Home.vue'
 export default {
     name: "typeWiriter",
     data: () => {
@@ -56,7 +56,7 @@ export default {
 </script>
 
 <template >
-    <div class="sp-container text-white">
+    <div class="sp-container">
         <div class="sp-content">
             <h2 class="frame-5">
                 <span>Shian</span>
@@ -65,47 +65,22 @@ export default {
                     <span>I</span>
                     <span>Am</span>
                     <span>A</span>
-
-
-
-
                     <span>
-
-                        <span class="typed-text">{{ typeValue }}</span>
+                        <span class="typed-text changing-text">{{ typeValue }}</span>
                         <span class="blinking-cursor">|</span>
                         <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
                     </span>
 
-
-
                 </div>
-
-                <span></span>
             </h2>
-
         </div>
     </div>
-    <!-- <div class="container1">
-        <h1 class="text-red-800 bg-purple-800">
-
-            <span class="typed-text">{{ typeValue }}</span>
-            <span class="blinking-cursor">|</span>
-            <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
-        </h1>
-    </div> -->
 </template>
 
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
-body {
-    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: 'Barlow', sans-serif;
-}
+
 
 h1 {
     position: absolute;
@@ -193,16 +168,6 @@ h1 {
 
 // Cursor blinking CSS Ends...
 
-/* .container1 {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-    position: relative;
-} */
-
 .container {
     width: 100%;
     position: relative;
@@ -234,6 +199,7 @@ a {
     height: 100%;
     left: 0px;
     top: 0px;
+
     z-index: 1000;
 }
 
@@ -249,6 +215,7 @@ a {
     color: transparent;
 
 }
+
 
 s .sp-container h2.frame-5 {
     -webkit-animation: none;
@@ -267,6 +234,12 @@ s .sp-container h2.frame-5 {
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
     margin-left: 1rem;
+}
+
+.changing-text {
+    color: #1d3557 !important;
+    opacity: 1;
+
 }
 
 .newline {
