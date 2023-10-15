@@ -52,7 +52,6 @@ export default {
     },
 };
 
-
 </script>
 
 <template >
@@ -70,19 +69,23 @@ export default {
                     <span>Am</span>
                     <span>A</span>
                     <span>
-                        <span class="typed-text changing-text">{{ typeValue }}</span>
+                        <span class="typed-text changing-text title1">{{ typeValue }}</span>
                         <span class="blinking-cursor">|</span>
                         <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
                     </span>
                 </div>
                 <img src="../assets/Headshotcopy.jpg" alt="" class=" object-cover mx-auto rounded-full  image ">
-                <span class=" text-xl ">
-                    <p>As a passionate computer science student with a love for creating and
+                <span>
+                    <p class="title">As a passionate computer science student with a love for creating and
                         developing, I
                         strive to make
-                        important applications that positively impact the lives of many.</p>
+                        important applications that positively impact the lives of many. Looking for oppurtunities to grow
+                        my skill set and continue to learn in the world of software</p>
 
                 </span>
+
+
+
 
             </h2>
 
@@ -92,6 +95,35 @@ export default {
 
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Barlow');
+
+.title {
+    font-weight: 800;
+    color: transparent;
+    font-size: 25px;
+    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+
+    /* letter-spacing: -8px; */
+}
+
+.title1 {
+    font-weight: 800;
+    color: transparent;
+    font-size: 90px;
+    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+
+    /* letter-spacing: -8px; */
+}
+
 
 .image {
     width: 30rem;
@@ -209,7 +241,7 @@ a {
     background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
     background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
     background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-    margin: 500px;
+    margin: 100px;
     margin-bottom: 1000px;
 
 }
@@ -252,13 +284,33 @@ s .sp-container h2.frame-5 {
     -moz-animation: blurFadeIn 3s ease-in 1s backwards;
     -ms-animation: blurFadeIn 3s ease-in 1s backwards;
     animation: blurFadeIn ease-in 3s 1s backwards;
-    color: transparent;
-    text-shadow: 0px 0px 1px #fff;
+    color: white;
+    /* text-shadow: 0px 0px 1px #fff; */
     margin-left: 1rem;
 }
 
+.sp-container h2.frame-5 span .title1 {
+    -webkit-animation: blurFadeIn 3s ease-in 1s backwards;
+    -moz-animation: blurFadeIn 3s ease-in 1s backwards;
+    -ms-animation: blurFadeIn 3s ease-in 1s backwards;
+    animation: blurFadeIn ease-in 3s 1s backwards;
+    color: transparent;
+
+    margin-left: 1rem;
+}
+
+.sp-container h2.frame-5 img {
+    -webkit-animation: blurFadeIn 3s ease-in 1s backwards;
+    -moz-animation: blurFadeIn 3s ease-in 1s backwards;
+    -ms-animation: blurFadeIn 3s ease-in 1s backwards;
+    animation: blurFadeIn ease-in 3s 1s backwards;
+    color: transparent;
+    text-shadow: 0px 0px 1px #fff;
+    /* margin-left: 1rem; */
+}
+
 .changing-text {
-    color: #1d3557 !important;
+    /* color: #1d3557 !important; */
     opacity: 1;
 
 }
@@ -275,20 +327,20 @@ s .sp-container h2.frame-5 {
 @-webkit-keyframes blurFadeInOut {
     0% {
         opacity: 0;
-        text-shadow: 0px 0px 40px #fff;
+
         -webkit-transform: scale(1.3);
     }
 
     20%,
     75% {
         opacity: 1;
-        text-shadow: 0px 0px 1px #fff;
+
         -webkit-transform: scale(1);
     }
 
     100% {
         opacity: 0;
-        text-shadow: 0px 0px 50px #fff;
+
         -webkit-transform: scale(0);
     }
 }
@@ -296,19 +348,19 @@ s .sp-container h2.frame-5 {
 @-webkit-keyframes blurFadeIn {
     0% {
         opacity: 0;
-        text-shadow: 0px 0px 40px #fff;
+
         -webkit-transform: scale(1.3);
     }
 
     50% {
         opacity: 0.5;
-        text-shadow: 0px 0px 10px #fff;
+
         -webkit-transform: scale(1.1);
     }
 
     100% {
         opacity: 1;
-        text-shadow: 0px 0px 1px #fff;
+
         -webkit-transform: scale(1);
     }
 }
@@ -347,20 +399,20 @@ s .sp-container h2.frame-5 {
 @-moz-keyframes blurFadeInOut {
     0% {
         opacity: 0;
-        text-shadow: 0px 0px 40px #fff;
+
         -moz-transform: scale(1.3);
     }
 
     20%,
     75% {
         opacity: 1;
-        text-shadow: 0px 0px 1px #fff;
+
         -moz-transform: scale(1);
     }
 
     100% {
         opacity: 0;
-        text-shadow: 0px 0px 50px #fff;
+
         -moz-transform: scale(0);
     }
 }
@@ -368,13 +420,13 @@ s .sp-container h2.frame-5 {
 @-moz-keyframes blurFadeIn {
     0% {
         opacity: 0;
-        text-shadow: 0px 0px 40px #fff;
+
         -moz-transform: scale(1.3);
     }
 
     100% {
         opacity: 1;
-        text-shadow: 0px 0px 1px #fff;
+
         -moz-transform: scale(1);
     }
 }
@@ -413,20 +465,20 @@ s .sp-container h2.frame-5 {
 @keyframes blurFadeInOut {
     0% {
         opacity: 0;
-        text-shadow: 0px 0px 40px #fff;
+
         transform: scale(1.3);
     }
 
     20%,
     75% {
         opacity: 1;
-        text-shadow: 0px 0px 1px #fff;
+
         transform: scale(1);
     }
 
     100% {
         opacity: 0;
-        text-shadow: 0px 0px 50px #fff;
+
         transform: scale(0);
     }
 }
@@ -434,19 +486,19 @@ s .sp-container h2.frame-5 {
 @keyframes blurFadeIn {
     0% {
         opacity: 0;
-        text-shadow: 0px 0px 40px #fff;
+
         transform: scale(1.3);
     }
 
     50% {
         opacity: 0.5;
-        text-shadow: 0px 0px 10px #fff;
+
         transform: scale(1.1);
     }
 
     100% {
         opacity: 1;
-        text-shadow: 0px 0px 1px #fff;
+
         transform: scale(1);
     }
 }

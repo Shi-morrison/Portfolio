@@ -3,3 +3,4 @@ declare module 'jquery' {
         lettering(method?: any): JQuery;
     }
 }
+declare module '@vueuse/motion';

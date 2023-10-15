@@ -3,7 +3,7 @@ import Navbar from './components/Navbar.vue';
 import Background from './components/Background.vue';
 import Projects from './components/Projects.vue'
 import Introduction from './components/Introduction.vue'
-import AboutMe from './components/AboutMe.vue'
+import Contact from './components/Contact.vue'
 
 </script>
 
@@ -25,11 +25,12 @@ import AboutMe from './components/AboutMe.vue'
   <Navbar />
   <div id="home">
     <Introduction />
-
   </div>
-
-  <div id="projects">
+  <div>
     <Projects />
+  </div>
+  <div id="contact">
+    <Contact />
   </div>
 </template>
 
