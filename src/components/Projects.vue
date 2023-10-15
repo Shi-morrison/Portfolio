@@ -4,11 +4,12 @@ import { MotionPlugin } from '@vueuse/motion'
 
 
 
+
 </script>
 
 <template>
     <section class="projects text-red-800">
-        <div class="container mx-auto">
+        <div class="container mx-auto ">
             <div class="flex flex-col lg:flex-row gap-x-10">
                 <div v-motion :initial="{
                     opacity: 0,
@@ -71,7 +72,7 @@ import { MotionPlugin } from '@vueuse/motion'
                         <img src="../assets/overtone.jpg" alt=""
                             class="proj1 group-hover:scale-125 transition-all duration-500">
                         <div class="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                            <span class="text-black">Developed a chat text-to-speech application using OpenAI for chatbox
+                            <span class="text-white">Developed a chat text-to-speech application using OpenAI for chatbox
                                 interaction. Utilized AWS CDK in Go for creating Lambda functions and APIs, while designing
                                 the frontend using React, TailwindCSS, and Next.js, ensuring a user-friendly interface and
                                 seamless real-time communication.</span>
@@ -90,7 +91,7 @@ import { MotionPlugin } from '@vueuse/motion'
 <style scoped lang="scss">
 .projects {
     position: relative;
-    margin-top: 120rem;
+    margin-top: 70rem;
     z-index: 2;
 }
 

@@ -1,9 +1,24 @@
 <script setup lang="js">
+import $ from 'jquery';
 
+$(document).on("mousemove", function (e) {
+    var mouseX, mouseY;
+    var ww = $(window).width();
+    var wh = $(window).height();
+    var traX, traY;
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({ "background-position": traX + "%" + traY + "%" });
+});
 
 function contactMe() {
-    window.location.href = 'mailto:shian.morrison@gmail.com';
-};
+    window.location.href = 'mailto:shian.morrison@gmail.com ';
+}
+
+
 
 </script>
 
@@ -18,12 +33,20 @@ function contactMe() {
     },
     y: 0,
 }">
+
         <div class="container mx-auto flex flex-col items-center justify-center">
             <h1 class="title" id="contact">Contact Me</h1>
-            <p class="title"> If you have any questions or would like to get in touch, please contact me through email. I
+            <p class="text-white text-3xl"> If you have any questions or would like to get in touch, please contact me
+                through email.
+                I
                 will be
                 happy to respond as soon as I am available. </p>
-            <button @click="contactMe" class="contact-button text-center ">Contact Me</button>
+            <button @click="contactMe" class="contact-button text-center hvr-bob hover:text-white  ">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path fill="#a8dadc"
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z" />
+                </svg></button>
         </div>
     </section>
 </template>
@@ -31,12 +54,13 @@ function contactMe() {
 <style scoped lang="scss">
 .contacts {
     position: relative;
-    margin-top: 220rem;
+    margin-top: 150rem;
+    margin-bottom: 60rem;
     z-index: 2;
 }
 
 .contact-button {
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     font-size: 16px;
     color: #fff;
     background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
@@ -44,7 +68,8 @@ function contactMe() {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; */
+    margin-bottom: 40rem;
 }
 
 .contact-button:hover {

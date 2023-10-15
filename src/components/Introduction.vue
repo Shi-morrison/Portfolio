@@ -52,12 +52,40 @@ export default {
     },
 };
 
+import $ from 'jquery';
+
+$(document).on("mousemove", function (e) {
+    var mouseX, mouseY;
+    var ww = $(window).width();
+    var wh = $(window).height();
+    var traX, traY;
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({ "background-position": traX + "%" + traY + "%" });
+});
+
+$(document).on("mousemove", function (e) {
+    var mouseX, mouseY;
+    var ww = $(window).width();
+    var wh = $(window).height();
+    var traX, traY;
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title1").css({ "background-position": traX + "%" + traY + "%" });
+});
+
 </script>
 
 <template >
     <div class="sp-container">
         <div class="sp-content">
-            <h2 class="frame-5">
+            <h2 class="frame-5 flex flex-col content-center items-center">
                 <span class=" text-xl ">
                     <p>Hi my name is</p>
 
@@ -75,12 +103,28 @@ export default {
                     </span>
                 </div>
                 <img src="../assets/Headshotcopy.jpg" alt="" class=" object-cover mx-auto rounded-full  image ">
-                <span>
-                    <p class="title">As a passionate computer science student with a love for creating and
-                        developing, I
-                        strive to make
-                        important applications that positively impact the lives of many. Looking for oppurtunities to grow
-                        my skill set and continue to learn in the world of software</p>
+
+                <span class="text">
+                    <div class="About">
+                        <h3 class="title1">About me:</h3>
+                        <p class="text-white  text-2xl  ">
+                            Passionate computer science student with a love for
+                            creating
+                            and
+                            developing, I
+                            strive to make
+                            important applications that positively impact the lives of many. Looking for oppurtunities to
+                            grow
+                            my skill set and continue to learn in the world of software.</p>
+                    </div>
+
+                    <div class="Experience">
+                        <h3 class="title1">Experience:</h3>
+                        <p class="text-white  text-2xl  ">
+
+                            Software Engineer Intern at The Garage: <br> May 2023 - Present <br> Software Engineer Intern at
+                            Ellucian: <br> June 2023 - August 2023 </p>
+                    </div>
 
                 </span>
 
@@ -110,20 +154,35 @@ export default {
     /* letter-spacing: -8px; */
 }
 
+.About,
+.Experience {
+    max-width: 30rem;
+}
+
 .title1 {
-    font-weight: 800;
+
     color: transparent;
-    font-size: 90px;
+
     background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
     background-position: 40% 50%;
     -webkit-background-clip: text;
-    position: relative;
-    text-align: center;
-    line-height: 60px;
+
+
+
 
     /* letter-spacing: -8px; */
 }
 
+.text {
+    margin-top: 50px;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.text p {
+    width: 100%;
+}
 
 .image {
     width: 30rem;
@@ -242,7 +301,7 @@ a {
     background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
     background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
     margin: 100px;
-    margin-bottom: 1000px;
+    margin-bottom: 50px;
 
 }
 
@@ -253,14 +312,14 @@ a {
     left: 0px;
     top: 0px;
 
-    z-index: 1000;
+    z-index: 2;
 }
 
 .sp-container h2 {
     /* position: absolute; */
     top: 50%;
     line-height: 100px;
-    height: 90px;
+    /* height: 90px; */
     margin-top: -50px;
     font-size: 90px;
     width: 100%;
@@ -298,6 +357,8 @@ s .sp-container h2.frame-5 {
 
     margin-left: 1rem;
 }
+
+
 
 .sp-container h2.frame-5 img {
     -webkit-animation: blurFadeIn 3s ease-in 1s backwards;

@@ -8,7 +8,7 @@
     </button>
 
     <!-- Main navigation -->
-    <nav v-show="isNavbarVisible" class="p-4 fixed right-0 bottom-2 navbar">
+    <nav v-show="isNavbarVisible" class="p-4 fixed right-0 bottom-24 navbar">
         <!-- List of navigation links and icons. -->
         <ul class="flex flex-col space-y-8 text-primary h-full justify-center items-center navbar-content">
             <li><a href="#home" class=" hvr-bob hover:text-white">
