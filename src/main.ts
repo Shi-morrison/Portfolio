@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { MotionPlugin } from '@vueuse/motion'
 
+
 import './style.css'
 import './hamburgers.css'
 import App from './App.vue'

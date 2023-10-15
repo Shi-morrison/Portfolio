@@ -1,6 +1,7 @@
 <script setup lang="js">
 
 import { MotionPlugin } from '@vueuse/motion'
+import { MotionDirective as MotionDirective } from '@vueuse/motion'
 
 
 
