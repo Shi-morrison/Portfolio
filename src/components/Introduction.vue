@@ -16,7 +16,15 @@ export default {
     },
     props: {},
     created() {
-        setTimeout(this.typeText, this.newTextDelay + 200);
+        if (window.innerWidth > 768) {  // Adjust 768 to whatever mobile breakpoint you're using
+            setTimeout(this.typeText, this.newTextDelay + 200);
+        }
+        if (window.innerWidth <= 768) {
+            this.typeValue = "Developer";
+        } else {
+            this.typeValue = "";
+            setTimeout(this.typeText, this.newTextDelay + 200);
+        }
     },
     methods: {
         typeText() {
@@ -80,6 +88,8 @@ $(document).on("mousemove", function (e) {
     $(".title1").css({ "background-position": traX + "%" + traY + "%" });
 });
 
+
+
 </script>
 
 <template >
@@ -96,7 +106,7 @@ $(document).on("mousemove", function (e) {
                     <span>I</span>
                     <span>Am</span>
                     <span>A</span>
-                    <span>
+                    <span class="changetext">
                         <span class="typed-text changing-text title1">{{ typeValue }}</span>
                         <span class="blinking-cursor">|</span>
                         <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
@@ -139,6 +149,8 @@ $(document).on("mousemove", function (e) {
 
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Barlow');
+
+
 
 .title {
     font-weight: 800;
@@ -199,9 +211,7 @@ h1 {
     top: 0px;
     z-index: 1000;
 
-    span.typed-text {
-        color: #d2b94b;
-    }
+
 }
 
 // Cursor blinking CSS Starts...
@@ -322,7 +332,7 @@ a {
     /* height: 90px; */
     margin-top: -50px;
     font-size: 90px;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     color: transparent;
 
@@ -373,6 +383,7 @@ s .sp-container h2.frame-5 {
 .changing-text {
     /* color: #1d3557 !important; */
     opacity: 1;
+    width: 50px;
 
 }
 
@@ -380,7 +391,12 @@ s .sp-container h2.frame-5 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+
+
 }
+
+
 
 
 /**/
