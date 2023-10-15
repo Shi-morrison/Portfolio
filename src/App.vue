@@ -23,14 +23,17 @@ import Contact from './components/Contact.vue'
 <template>
   <Background />
   <Navbar />
-  <div id="home">
-    <Introduction />
-  </div>
-  <div>
-    <Projects />
-  </div>
-  <div id="contact">
-    <Contact />
+
+  <div class="flex flex-col text-center ">
+    <div id="home">
+      <Introduction />
+    </div>
+    <div>
+      <Projects />
+    </div>
+    <div id="contact">
+      <Contact />
+    </div>
   </div>
 </template>
 

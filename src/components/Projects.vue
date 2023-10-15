@@ -1,7 +1,6 @@
 <script setup lang="js">
 
 import { MotionPlugin } from '@vueuse/motion'
-import { MotionDirective as MotionDirective } from '@vueuse/motion'
 
 
 
@@ -27,11 +26,11 @@ import { MotionDirective as MotionDirective } from '@vueuse/motion'
                         <div class="h2  text-textCol title " id="projects">My Latest work</div>
                         <p class="max-w-sm mb-16"></p>
                     </div>
-                    <div class=" group relative overflow-hidden border-2 vorder-white/50 rounded-xl w-fit">
+                    <div class=" group relative overflow-hidden   border-2 border-white/50 rounded-xl w-fit">
                         <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                         <img src="../assets/chess10.png" alt=""
                             class="proj1 group-hover:scale-125 transition-all duration-500">
-                        <div class="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                        <div class="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
                             <span class="text-white"> Collaborated in a team to develop Chess Ten, a groundbreaking
                                 three-dimensional chess game with re-imagined rules, which won first place among over
                                 twelve-hundred participants at the ShellHacks Hackathon.</span>
@@ -90,6 +89,28 @@ import { MotionDirective as MotionDirective } from '@vueuse/motion'
 </template>
 
 <style scoped lang="scss">
+@media (max-width: 640px) {
+    .group:hover .group-hover\:bg-black\/70 {
+        background: transparent !important;
+    }
+
+    .group-hover\:scale-125 {
+        transform: scale(1) !important;
+    }
+
+    .absolute {
+        position: static !important;
+    }
+
+    .-bottom-full {
+        bottom: auto !important;
+    }
+
+    .left-12 {
+        left: auto !important;
+    }
+}
+
 .projects {
     position: relative;
     margin-top: 70rem;
@@ -160,5 +181,4 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding-top: 10px;
-}
-</style>
+}</style>
