@@ -1,21 +1,35 @@
 <script setup lang="js">
 import Navbar from './components/Navbar.vue';
-import Home from './components/Home.vue';
+import Background from './components/Background.vue';
 import Projects from './components/Projects.vue'
 import Introduction from './components/Introduction.vue'
+import AboutMe from './components/AboutMe.vue'
 
 </script>
 
-<template>
+<!-- <template>
   <Navbar></Navbar>
   <div id="backround">
-    <Home></Home>
+    <Backround></Backround>
+    <Introduction></Introduction>
   </div>
   <div id="introduction">
-    <Introduction></Introduction>
+
   </div>
   <div id="projects">
     <Projects></Projects>
+  </div>
+</template> -->
+<template>
+  <Background />
+  <Navbar />
+  <div id="home">
+    <Introduction />
+
+  </div>
+
+  <div id="projects">
+    <Projects />
   </div>
 </template>
 

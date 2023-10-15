@@ -1,6 +1,6 @@
 <template>
     <!-- Hamburger menu button, displayed only for mobile views. -->
-    <button class="hamburger hamburger--collapse absolute top-4 right-0 z-10" type="button"
+    <button class="hamburger hamburger--collapse top-4 right-0 z-10 fixed" type="button"
         :class="{ 'is-active': isNavbarVisible }" @click="toggleNavbar">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -8,7 +8,7 @@
     </button>
 
     <!-- Main navigation -->
-    <nav v-show="isNavbarVisible" class="p-4 absolute right-0 h-full navbar">
+    <nav v-show="isNavbarVisible" class="p-4 fixed right-0 navbar">
         <!-- List of navigation links and icons. -->
         <ul class="flex flex-col space-y-8 text-primary h-full justify-center items-center navbar-content">
             <li><a href="#home" class=" hvr-bob hover:text-white">

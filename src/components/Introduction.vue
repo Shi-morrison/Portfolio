@@ -1,5 +1,5 @@
 <script >
-import Home from './Home.vue'
+
 export default {
     name: "typeWiriter",
     data: () => {
@@ -59,8 +59,12 @@ export default {
     <div class="sp-container">
         <div class="sp-content">
             <h2 class="frame-5">
+                <span class=" text-xl ">
+                    <p>Hi my name is</p>
+
+                </span>
                 <span>Shian</span>
-                <span>Morrison</span>
+                <span>Morrison,</span>
                 <div class="newline">
                     <span>I</span>
                     <span>Am</span>
@@ -70,9 +74,18 @@ export default {
                         <span class="blinking-cursor">|</span>
                         <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
                     </span>
-
                 </div>
+                <img src="../assets/Headshotcopy.jpg" alt="" class=" object-cover mx-auto rounded-full  image ">
+                <span class=" text-xl ">
+                    <p>As a passionate computer science student with a love for creating and
+                        developing, I
+                        strive to make
+                        important applications that positively impact the lives of many.</p>
+
+                </span>
+
             </h2>
+
         </div>
     </div>
 </template>
@@ -80,7 +93,12 @@ export default {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
-
+.image {
+    width: 30rem;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
 
 h1 {
     position: absolute;
@@ -181,20 +199,23 @@ a {
 
 
 .sp-container {
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     z-index: 2;
     background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
     background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
     background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
     background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+    margin: 500px;
+    margin-bottom: 1000px;
+
 }
 
 .sp-content {
-    position: absolute;
+    /* position: relative; */
     width: 100%;
     height: 100%;
     left: 0px;
@@ -204,7 +225,7 @@ a {
 }
 
 .sp-container h2 {
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     line-height: 100px;
     height: 90px;
