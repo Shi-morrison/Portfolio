@@ -58,7 +58,7 @@ function contactMe() {
 <style scoped lang="scss">
 .contacts {
     position: relative;
-    margin-top: 150rem;
+    margin-top: 85rem;
     margin-bottom: 60rem;
     z-index: 2;
 }
