@@ -29,11 +29,11 @@ function contactMe() {
 <template>
     <section class="section contacts bg-red-700" v-motion :initial="{
         opacity: 0,
-        y: 100,
+
     }" :visible="{
     opacity: 1,
     transition: {
-        delay: 100,
+        delay: 10,
     },
     y: 0,
 }">

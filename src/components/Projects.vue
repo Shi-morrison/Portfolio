@@ -13,7 +13,7 @@ import { MotionPlugin } from '@vueuse/motion'
             <div class="flex flex-col lg:flex-row gap-x-10">
                 <div v-motion :initial="{
                     opacity: 0,
-                    x: -100,
+                    x: 0,
                 }" :visible="{
     opacity: 1,
     transition: {
@@ -43,7 +43,7 @@ import { MotionPlugin } from '@vueuse/motion'
                 </div>
                 <div v-motion :initial="{
                     opacity: 0,
-                    x: 100,
+                    x: 0,
                 }" :visible="{
     opacity: 1,
     transition: {

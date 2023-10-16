@@ -31,7 +31,7 @@ import Contact from './components/Contact.vue'
     <div>
       <Projects />
     </div>
-    <div id="contact">
+    <div>
       <Contact />
     </div>
   </div>
