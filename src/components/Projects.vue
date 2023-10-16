@@ -30,12 +30,13 @@ import { MotionPlugin } from '@vueuse/motion'
                         <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                         <img src="../assets/chess10.png" alt=""
                             class="proj1 group-hover:scale-125 transition-all duration-500">
-                        <div class="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
+                        <div
+                            class="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50 flex items-center justify-center">
                             <span class="text-white"> Collaborated in a team to develop Chess Ten, a groundbreaking
                                 three-dimensional chess game with re-imagined rules, which won first place among over
                                 twelve-hundred participants at the ShellHacks Hackathon.</span>
                         </div>
-                        <div class="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                        <div class="absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-700 z-50">
                             <span class="text-3xl text-white proj">Chess 10 (React , Vanta.js, Typescript)</span>
                         </div>
                     </div>
@@ -54,7 +55,7 @@ import { MotionPlugin } from '@vueuse/motion'
                         <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                         <img src="../assets/Swamp.jpg" alt=""
                             class="proj1 group-hover:scale-125 transition-all duration-500">
-                        <div class="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                        <div class="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50 ">
                             <span class="text-white"> Developed an innovative program aimed at detecting
                                 endangered
                                 species in Florida, leveraging the YOLO algorithm for object detection.
@@ -63,7 +64,7 @@ import { MotionPlugin } from '@vueuse/motion'
                                 libraries including Python, PyTorch, Numpy, and Roboflow. The project was a part of the
                                 competitive Swamp Hacks IX hackathon.</span>
                         </div>
-                        <div class="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                        <div class="absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-700 z-50">
                             <span class="text-3xl text-white proj">SwampVision (Python, PyTorch, Roboflow)</span>
                         </div>
                     </div>
@@ -71,13 +72,13 @@ import { MotionPlugin } from '@vueuse/motion'
                         <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                         <img src="../assets/overtone.jpg" alt=""
                             class="proj1 group-hover:scale-125 transition-all duration-500">
-                        <div class="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                        <div class="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50">
                             <span class="text-white">Developed a chat text-to-speech application using OpenAI for chatbox
                                 interaction. Utilized AWS CDK in Go for creating Lambda functions and APIs, while designing
                                 the frontend using React, TailwindCSS, and Next.js, ensuring a user-friendly interface and
                                 seamless real-time communication.</span>
                         </div>
-                        <div class="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                        <div class="absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-700 z-50">
                             <span class="text-3xl text-white proj">Overtone (OpenAI, AWS, Typescript)</span>
                         </div>
                     </div>
@@ -181,4 +182,5 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding-top: 10px;
-}</style>
+}
+</style>
