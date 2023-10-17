@@ -114,22 +114,7 @@ $(document).on("mousemove", function (e) {
                 </div>
                 <img src="../assets/Headshotcopy.jpg" alt="" class=" object-cover mx-auto rounded-full  image ">
 
-                <span class="text">
-                    <div class="About">
-                        <p class="text-white  text-2xl  ">
-                            Passionate computer science student with a love for
-                            creating
-                            and
-                            developing, I
-                            strive to make
-                            important applications that positively impact the lives of many. Looking for oppurtunities to
-                            grow
-                            my skill set and continue to learn in the world of software.</p>
-                    </div>
 
-
-
-                </span>
 
 
 
