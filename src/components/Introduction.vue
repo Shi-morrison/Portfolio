@@ -100,24 +100,20 @@ $(document).on("mousemove", function (e) {
                     <p>Hi my name is</p>
 
                 </span>
-                <span>Shian</span>
-                <span>Morrison,</span>
-                <div class="newline">
+                <span class="name">Shian</span>
+                <span class="name">Morrison,</span>
+                <div class="newline name">
                     <span>I</span>
                     <span>Am</span>
                     <span>A</span>
-                    <span class="changetext">
-                        <span class="typed-text changing-text title1">{{ typeValue }}</span>
-                        <span class="blinking-cursor">|</span>
-                        <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
-                    </span>
+
                 </div>
+                <span class="changetext">
+                    <span class="typed-text changing-text title1">{{ typeValue }}</span>
+                    <span class="blinking-cursor">|</span>
+                    <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
+                </span>
                 <img src="../assets/Headshotcopy.jpg" alt="" class=" object-cover mx-auto rounded-full  image ">
-
-
-
-
-
 
             </h2>
 
@@ -128,7 +124,21 @@ $(document).on("mousemove", function (e) {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
+@media (max-width: 640px) {
+    .title1 {
+        font-size: 50px;
 
+    }
+
+    .name {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .blinking-cursor {
+        display: none;
+    }
+}
 
 .title {
     font-weight: 800;
@@ -365,14 +375,7 @@ s .sp-container h2.frame-5 {
 
 }
 
-.newline {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 
-
-
-}
 
 
 
