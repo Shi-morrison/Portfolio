@@ -4,6 +4,8 @@ import Background from './components/Background.vue';
 import Projects from './components/Projects.vue'
 import Introduction from './components/Introduction.vue'
 import Contact from './components/Contact.vue'
+import AboutMe from './components/AboutMe.vue'
+import Experience from './components/Experience.vue';
 
 </script>
 
@@ -29,9 +31,15 @@ import Contact from './components/Contact.vue'
       <Introduction />
     </div>
     <div>
+      <AboutMe />
+    </div>
+    <div>
+      <Experience />
+    </div>
+    <div>
       <Projects />
     </div>
-    <div id="contact">
+    <div>
       <Contact />
     </div>
   </div>

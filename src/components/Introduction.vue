@@ -116,7 +116,6 @@ $(document).on("mousemove", function (e) {
 
                 <span class="text">
                     <div class="About">
-                        <h3 class="title1">About me:</h3>
                         <p class="text-white  text-2xl  ">
                             Passionate computer science student with a love for
                             creating
@@ -128,13 +127,7 @@ $(document).on("mousemove", function (e) {
                             my skill set and continue to learn in the world of software.</p>
                     </div>
 
-                    <div class="Experience">
-                        <h3 class="title1">Experience:</h3>
-                        <p class="text-white  text-2xl  ">
 
-                            Software Engineer Intern at The Garage: <br> May 2023 - Present <br> Software Engineer Intern at
-                            Ellucian: <br> June 2023 - August 2023 </p>
-                    </div>
 
                 </span>
 

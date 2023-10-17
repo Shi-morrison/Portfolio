@@ -13,14 +13,18 @@
         <ul class="flex flex-col space-y-8 text-primary h-full justify-center items-center navbar-content">
             <li><a href="#home" class=" hvr-bob hover:text-white">
                     <Icon icon="ic:baseline-home" width="35" />
-
-
+                </a></li>
+            <li><a href="#aboutme" class="hvr-bob hover:text-white">
+                    <Icon icon="material-symbols:android-contacts" width="35" />
+                </a></li>
+            <li><a href="#experience" class=" hvr-bob hover:text-white">
+                    <Icon icon="ic:baseline-work" width="35" />
                 </a></li>
             <li><a href="#projects" class=" hvr-bob hover:text-white">
                     <Icon icon="eos-icons:project" width="35" />
                 </a></li>
             <li><a href="#contact" class="hvr-bob hover:text-white">
-                    <Icon icon="material-symbols:android-contacts" width="35" />
+                    <Icon icon="ic:baseline-email" width="35" />
                 </a></li>
             <li><a href="https://www.linkedin.com/in/shianmorrison1/" target="_blank" rel="noopener noreferrer"
                     class="hvr-bob hover:text-white">

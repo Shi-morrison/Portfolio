@@ -40,6 +40,22 @@ import { MotionPlugin } from '@vueuse/motion'
                             <span class="text-3xl text-white proj">Chess 10 (React , Vanta.js, Typescript)</span>
                         </div>
                     </div>
+                    <div class=" group relative overflow-hidden   border-2 border-white/50 rounded-xl w-fit">
+                        <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                        <img src="../assets/PP.png" alt="" class="proj1 group-hover:scale-125 transition-all duration-500">
+                        <div
+                            class="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50 flex items-center justify-center">
+                            <span class="text-white"> Phantom Phonebook, built on the LAMP stack, merges a Halloween theme
+                                with essential contact management functionalities, including CRUD operations and user
+                                authentication features. Its user-friendly interface, backed by MySQL, PHP, and Apache,
+                                provides a seamless and secure platform for personalized contact handling during the
+                                Halloween season.</span>
+                        </div>
+                        <div class="absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-700 z-50">
+                            <span class="text-3xl text-white proj">Phantom Phonebook (HTML , Javascropt/Ajax, PHP,
+                                Apache)</span>
+                        </div>
+                    </div>
                 </div>
                 <div v-motion :initial="{
                     opacity: 0,
@@ -114,9 +130,18 @@ import { MotionPlugin } from '@vueuse/motion'
 
 .projects {
     position: relative;
-    margin-top: 70rem;
+    margin-top: 78rem;
     z-index: 2;
 }
+
+@media (max-width: 640px) {
+    .projects {
+        position: relative;
+        margin-top: 145rem;
+        z-index: 2;
+    }
+}
+
 
 @mixin center() {
     -webkit-transform: translate(-50%, -50%);

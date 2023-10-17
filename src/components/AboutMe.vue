@@ -39,18 +39,39 @@ function contactMe() {
 }">
 
         <div class="container mx-auto flex flex-col items-center justify-center">
-            <h1 class="title" id="contact">Contact Me</h1>
-            <p class="text-white text-3xl"> If you have any questions or would like to get in touch, please contact me
-                through email.
-                I
-                will be
-                happy to respond as soon as I am available. </p>
-            <button @click="contactMe" class="contact-button text-center hvr-bob hover:text-white  ">
+            <h1 class="title" id="aboutme">About Me</h1>
+            <p class="text-white text-2xl"> Hello! My name is Shian and I enjoy creating things that live on the
+                internet. I got into programming when I was around 13 with my interest being into game development. I
+                eventually got
+                web development during college and have been enjoying it ever since.
+                <br>
+                <br>
+                Fast-forward to today, and I’ve had the privilege of working at multiple internships and learning so much
+                through them.
+                My main focus these days is building accessible applications and continuing to learn new things that way I
+                can be a valuable asset to a company.
+                <br>
+                <br>
+                I am also working on becoming a leader in my community by joing great organizations such as the National
+                Society of Black Engineers. I hope to some day make a huge difference in this space and become an
+                inspiration to others.
+                <br>
+                <br>
+                Here are a few technologies I’ve been working with recently:
+                <br>
+            <div class="flex flex-row gap-5">
+                <div class="flex flex-col title">
+                    <p>React</p>
+                    <p>Node</p>
+                </div>
+                <div class="flex flex-col title">
+                    <p>AWS</p>
+                    <p>Typescript</p>
+                </div>
+            </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                    <path fill="#a8dadc"
-                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z" />
-                </svg></button>
+            </p>
+
         </div>
     </section>
 </template>
@@ -58,8 +79,8 @@ function contactMe() {
 <style scoped lang="scss">
 .contacts {
     position: relative;
-    margin-top: 80rem;
-    margin-bottom: 60rem;
+    margin-top: 40rem;
+    margin-bottom: 85rem;
     z-index: 2;
 }
 
@@ -144,15 +165,5 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding-top: 10px;
-}
-
-@media (max-width: 640px) {
-    .contacts {
-        position: relative;
-        margin-top: 110rem;
-        margin-bottom: 60rem;
-        z-index: 2;
-    }
-
 }
 </style>
