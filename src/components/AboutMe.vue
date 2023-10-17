@@ -42,7 +42,7 @@ function contactMe() {
             <h1 class="title" id="aboutme">About Me</h1>
             <p class="text-white text-2xl"> Hello! My name is Shian and I enjoy creating things that live on the
                 internet. I got into programming when I was around 13 with my interest being game development. I
-                eventually got
+                eventually got into
                 web development during college and have been enjoying it ever since.
                 <br>
                 <br>

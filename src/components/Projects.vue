@@ -35,7 +35,7 @@ import { MotionPlugin } from '@vueuse/motion'
                                 three-dimensional chess game with re-imagined rules, which won first place among over
                                 1200 participants at the ShellHacks Hackathon.</span>
                         </div>
-                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50">
+                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full">
                             <span class="text-2xl text-white proj">Chess 10 (React, Vanta.js, Typescript)</span>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ import { MotionPlugin } from '@vueuse/motion'
                                 provides a seamless and secure platform for personalized contact handling during the
                                 Halloween season.</span>
                         </div>
-                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 ">
+                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full">
                             <span class="text-2xl text-white proj">Phantom Phonebook (HTML, Javascript/Ajax, PHP,
                                 Apache)</span>
                         </div>
@@ -79,8 +79,8 @@ import { MotionPlugin } from '@vueuse/motion'
                                 libraries including Python, PyTorch, Numpy, and Roboflow. The project was a part of the
                                 competitive Swamp Hacks IX hackathon.</span>
                         </div>
-                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 ">
-                            <span class="text-2xl text-white proj text-center">SwampVision (Python, PyTorch,
+                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full ">
+                            <span class="text-2xl text-white proj">SwampVision (Python, PyTorch,
                                 Roboflow)</span>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ import { MotionPlugin } from '@vueuse/motion'
                                 the frontend using React, TailwindCSS, and Next.js, ensuring a user-friendly interface and
                                 seamless real-time communication.</span>
                         </div>
-                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 ">
+                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full ">
                             <span class="text-2xl text-white proj">Overtone (OpenAI, AWS, Typescript)</span>
                         </div>
                     </div>
@@ -196,6 +196,7 @@ body {
     -webkit-background-clip: text;
     position: relative;
     text-align: center;
+    width: 100%;
     /* line-height: 90px; */
 
 }
