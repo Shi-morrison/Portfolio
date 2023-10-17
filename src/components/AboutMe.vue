@@ -29,7 +29,7 @@ function contactMe() {
 <template>
     <section class="section contacts bg-red-700" v-motion :initial="{
         opacity: 0,
-        y: 100,
+        y: -100,
     }" :visible="{
     opacity: 1,
     transition: {
@@ -41,18 +41,18 @@ function contactMe() {
         <div class="container mx-auto flex flex-col items-center justify-center">
             <h1 class="title" id="aboutme">About Me</h1>
             <p class="text-white text-2xl"> Hello! My name is Shian and I enjoy creating things that live on the
-                internet. I got into programming when I was around 13 with my interest being into game development. I
+                internet. I got into programming when I was around 13 with my interest being game development. I
                 eventually got
                 web development during college and have been enjoying it ever since.
                 <br>
                 <br>
                 Fast-forward to today, and I’ve had the privilege of working at multiple internships and learning so much
                 through them.
-                My main focus these days is building accessible applications and continuing to learn new things that way I
+                My main focus these days is building accessible applications and continuing to learn new things, that way I
                 can be a valuable asset to a company.
                 <br>
                 <br>
-                I am also working on becoming a leader in my community by joing great organizations such as the National
+                I am also working on becoming a leader in my community by joining great organizations, such as the National
                 Society of Black Engineers. I hope to some day make a huge difference in this space and become an
                 inspiration to others.
                 <br>
