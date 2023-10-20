@@ -27,33 +27,42 @@ import { MotionPlugin } from '@vueuse/motion'
                         <p class="max-w-sm mb-16"></p>
                     </div>
                     <div class=" group relative overflow-hidden   border-2 border-white/50 rounded-xl w-fit">
-                        <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                        <img src="../assets/chess10.png" alt=""
-                            class="proj1 group-hover:scale-125 transition-all duration-500">
-                        <div class="absolute -bottom-full  group-hover:bottom-24 transition-all duration-500 z-50">
-                            <span class="text-white"> Collaborated in a team to develop Chess 10, a groundbreaking
-                                three-dimensional chess game with re-imagined rules, which won first place among over
-                                1200 participants at the ShellHacks Hackathon.</span>
-                        </div>
-                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full">
-                            <span class="text-2xl text-white proj">Chess 10 (React, Vanta.js, Typescript)</span>
-                        </div>
+                        <a href="https://www.chess10.com/" target="_blank">
+                            <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300">
+                            </div>
+                            <img src="../assets/chess10.png" alt=""
+                                class="proj1 group-hover:scale-125 transition-all duration-500">
+                            <div class="absolute -bottom-full  group-hover:bottom-24 transition-all duration-500 z-50">
+                                <span class="text-white"> Collaborated in a team to develop Chess 10, a groundbreaking
+                                    three-dimensional chess game with re-imagined rules, which won first place among over
+                                    1200 participants at the ShellHacks Hackathon.</span>
+                            </div>
+                            <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full">
+                                <span class="text-2xl text-white proj">Chess 10 (React, Vanta.js, Typescript)</span>
+                            </div>
+
+                        </a>
                     </div>
                     <div class=" group relative overflow-hidden   border-2 border-white/50 rounded-xl w-fit">
-                        <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                        <img src="../assets/PP.png" alt="" class="proj1 group-hover:scale-125 transition-all duration-500">
-                        <div class="absolute -bottom-full group-hover:bottom-24 transition-all duration-500 z-50  ">
-                            <span class="text-white "> Phantom Phonebook, built on the LAMP stack, merges a Halloween
-                                theme
-                                with essential contact management functionalities, including CRUD operations and user
-                                authentication features. Its user-friendly interface, backed by MySQL, PHP, and Apache,
-                                provides a seamless and secure platform for personalized contact handling during the
-                                Halloween season.</span>
-                        </div>
-                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full">
-                            <span class="text-2xl text-white proj">Phantom Phonebook (HTML, Javascript/Ajax, PHP,
-                                Apache)</span>
-                        </div>
+                        <a href="https://github.com/Shi-morrison/Contact-Manager" target="_blank">
+                            <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300">
+                            </div>
+                            <img src="../assets/PP.png" alt=""
+                                class="proj1 group-hover:scale-125 transition-all duration-500">
+                            <div class="absolute -bottom-full group-hover:bottom-24 transition-all duration-500 z-50  ">
+                                <span class="text-white "> Phantom Phonebook, built on the LAMP stack, merges a Halloween
+                                    theme
+                                    with essential contact management functionalities, including CRUD operations and user
+                                    authentication features. Its user-friendly interface, backed by MySQL, PHP, and Apache,
+                                    provides a seamless and secure platform for personalized contact handling during the
+                                    Halloween season.</span>
+                            </div>
+                            <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full">
+                                <span class="text-2xl text-white proj">Phantom Phonebook (HTML, Javascript/Ajax, PHP,
+                                    Apache)</span>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
                 <div v-motion :initial="{
@@ -67,36 +76,50 @@ import { MotionPlugin } from '@vueuse/motion'
     x: 0,
 }" class="flex-1 flex flex-col gap-y-10">
                     <div class=" group relative overflow-hidden border-2 vorder-white/50 rounded-xl w-fit">
-                        <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                        <img src="../assets/Swamp.jpg" alt=""
-                            class="proj1 group-hover:scale-125 transition-all duration-500">
-                        <div class="absolute -bottom-full  group-hover:bottom-24 transition-all duration-500 z-50 ">
-                            <span class="text-white"> Developed an innovative program aimed at detecting
-                                endangered
-                                species in Florida, leveraging the YOLO algorithm for object detection.
-                                This
-                                endeavor was significantly propelled by the implementation of various technologies and
-                                libraries including Python, PyTorch, Numpy, and Roboflow. The project was a part of the
-                                competitive Swamp Hacks IX hackathon.</span>
-                        </div>
-                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full ">
-                            <span class="text-2xl text-white proj">SwampVision (Python, PyTorch,
-                                Roboflow)</span>
-                        </div>
+                        <a href="https://devpost.com/software/swamp-vision" target="_blank">
+                            <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300">
+                            </div>
+                            <img src="../assets/Swamp.jpg" alt=""
+                                class="proj1 group-hover:scale-125 transition-all duration-500">
+                            <div class="absolute -bottom-full  group-hover:bottom-24 transition-all duration-500 z-50 ">
+                                <span class="text-white"> Developed an innovative program aimed at detecting
+                                    endangered
+                                    species in Florida, leveraging the YOLO algorithm for object detection.
+                                    This
+                                    endeavor was significantly propelled by the implementation of various technologies and
+                                    libraries including Python, PyTorch, Numpy, and Roboflow. The project was a part of the
+                                    competitive Swamp Hacks IX hackathon.</span>
+                            </div>
+                            <div
+                                class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full ">
+                                <span class="text-2xl text-white proj">SwampVision (Python, PyTorch,
+                                    Roboflow)</span>
+                            </div>
+                        </a>
+
                     </div>
                     <div class=" group relative overflow-hidden border-2 vorder-white/50 rounded-xl w-fit">
-                        <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                        <img src="../assets/overtone.jpg" alt=""
-                            class="proj1 group-hover:scale-125 transition-all duration-500">
-                        <div class="absolute -bottom-full group-hover:bottom-24 transition-all duration-500 z-50">
-                            <span class="text-white">Developed a chat text-to-speech application using OpenAI for chatbox
-                                interaction. Utilized AWS CDK in Go for creating Lambda functions and APIs, while designing
-                                the frontend using React, TailwindCSS, and Next.js, ensuring a user-friendly interface and
-                                seamless real-time communication.</span>
-                        </div>
-                        <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full ">
-                            <span class="text-2xl text-white proj">Overtone (OpenAI, AWS, Typescript)</span>
-                        </div>
+                        <a href="https://github.com/Shi-morrison/TTS-AI" target="_blank">
+                            <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300">
+                            </div>
+                            <img src="../assets/overtone.jpg" alt=""
+                                class="proj1 group-hover:scale-125 transition-all duration-500">
+                            <div class="absolute -bottom-full group-hover:bottom-24 transition-all duration-500 z-50">
+                                <span class="text-white">Developed a chat text-to-speech application using OpenAI for
+                                    chatbox
+                                    interaction. Utilized AWS CDK in Go for creating Lambda functions and APIs, while
+                                    designing
+                                    the frontend using React, TailwindCSS, and Next.js, ensuring a user-friendly interface
+                                    and
+                                    seamless real-time communication.</span>
+                            </div>
+                            <div
+                                class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full ">
+                                <span class="text-2xl text-white proj">Overtone (OpenAI, AWS, Typescript)</span>
+                            </div>
+                        </a>
+
+
                     </div>
                 </div>
             </div>
@@ -206,5 +229,4 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding-top: 10px;
-}
-</style>
+}</style>
