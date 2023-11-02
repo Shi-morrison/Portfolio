@@ -337,10 +337,7 @@ s .sp-container h2.frame-5 {
 }
 
 .sp-container h2.frame-5 span {
-    -webkit-animation: blurFadeIn .5s ease-in backwards;
-    -moz-animation: blurFadeIn .5s ease-in backwards;
-    -ms-animation: blurFadeIn .5s ease-in backwards;
-    animation: blurFadeIn ease-in .5s backwards;
+
     color: white;
     /* text-shadow: 0px 0px 1px #fff; */
     /* margin-left: 1rem; */
@@ -359,10 +356,7 @@ s .sp-container h2.frame-5 {
 
 
 .sp-container h2.frame-5 img {
-    -webkit-animation: blurFadeIn .5s ease-in backwards;
-    -moz-animation: blurFadeIn .5s ease-in backwards;
-    -ms-animation: blurFadeIn .5s ease-in backwards;
-    animation: blurFadeIn ease-in .5s backwards;
+
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
     /* margin-left: 1rem; */
