@@ -103,9 +103,9 @@ $(document).on("mousemove", function (e) {
                 <span class="name">Shian</span>
                 <span class="name">Morrison,</span>
                 <div class="newline name">
-                    <span>I</span>
-                    <span>Am</span>
-                    <span>A</span>
+                    <span>I Am A </span>
+                    <!-- <span>Am</span>
+                    <span>A</span> -->
 
                 </div>
                 <span class="changetext">
@@ -337,20 +337,20 @@ s .sp-container h2.frame-5 {
 }
 
 .sp-container h2.frame-5 span {
-    -webkit-animation: blurFadeIn 3s ease-in 1s backwards;
-    -moz-animation: blurFadeIn 3s ease-in 1s backwards;
-    -ms-animation: blurFadeIn 3s ease-in 1s backwards;
-    animation: blurFadeIn ease-in 3s 1s backwards;
+    -webkit-animation: blurFadeIn .5s ease-in backwards;
+    -moz-animation: blurFadeIn .5s ease-in backwards;
+    -ms-animation: blurFadeIn .5s ease-in backwards;
+    animation: blurFadeIn ease-in .5s backwards;
     color: white;
     /* text-shadow: 0px 0px 1px #fff; */
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 .sp-container h2.frame-5 span .title1 {
-    -webkit-animation: blurFadeIn 3s ease-in 1s backwards;
-    -moz-animation: blurFadeIn 3s ease-in 1s backwards;
-    -ms-animation: blurFadeIn 3s ease-in 1s backwards;
-    animation: blurFadeIn ease-in 3s 1s backwards;
+    -webkit-animation: blurFadeIn .5s ease-in 1s backwards;
+    -moz-animation: blurFadeIn .5s ease-in 1s backwards;
+    -ms-animation: blurFadeIn .5s ease-in 1s backwards;
+    animation: blurFadeIn ease-in .5s 1s backwards;
     color: transparent;
 
     margin-left: 1rem;
@@ -359,10 +359,10 @@ s .sp-container h2.frame-5 {
 
 
 .sp-container h2.frame-5 img {
-    -webkit-animation: blurFadeIn 3s ease-in 1s backwards;
-    -moz-animation: blurFadeIn 3s ease-in 1s backwards;
-    -ms-animation: blurFadeIn 3s ease-in 1s backwards;
-    animation: blurFadeIn ease-in 3s 1s backwards;
+    -webkit-animation: blurFadeIn .5s ease-in backwards;
+    -moz-animation: blurFadeIn .5s ease-in backwards;
+    -ms-animation: blurFadeIn .5s ease-in backwards;
+    animation: blurFadeIn ease-in .5s backwards;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
     /* margin-left: 1rem; */
