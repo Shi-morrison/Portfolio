@@ -38,28 +38,23 @@ import { MotionPlugin } from '@vueuse/motion'
                                     1200 participants at the ShellHacks Hackathon.</span>
                             </div>
                             <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full">
-                                <span class="text-2xl text-white proj">Chess 10 (React, Vanta.js, Typescript)</span>
+                                <span class="text-2xl text-white ">Chess 10 (React, Vanta.js, Typescript)</span>
                             </div>
 
                         </a>
                     </div>
                     <div class=" group relative overflow-hidden   border-2 border-white/50 rounded-xl w-fit">
-                        <a href="https://github.com/Shi-morrison/Contact-Manager" target="_blank">
+                        <a href="https://codeclash.app/" target="_blank">
                             <div class="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300">
                             </div>
-                            <img src="../assets/PP.png" alt=""
+                            <img src="../assets/codeclash.png" alt=""
                                 class="proj1 group-hover:scale-125 transition-all duration-500">
                             <div class="absolute -bottom-full group-hover:bottom-24 transition-all duration-500 z-50  ">
-                                <span class="text-white "> Phantom Phonebook, built on the LAMP stack, merges a Halloween
-                                    theme
-                                    with essential contact management functionalities, including CRUD operations and user
-                                    authentication features. Its user-friendly interface, backed by MySQL, PHP, and Apache,
-                                    provides a seamless and secure platform for personalized contact handling during the
-                                    Halloween season.</span>
+                                <span class="text-white ">An interactive web-based application thats hosts real-time competitive coding battles between two participants. Utilizing a selection of LeetCode problems, players will face off and the player who solves the problem first will win the game.</span>
                             </div>
                             <div class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full">
-                                <span class="text-2xl text-white proj">Phantom Phonebook (HTML, Javascript/Ajax, PHP,
-                                    Apache)</span>
+                                <span class="text-2xl text-white ">Code Clash (Mithril.Js, Typescript, Oauth2,
+                                    Websockets)</span>
                             </div>
                         </a>
 
@@ -92,7 +87,7 @@ import { MotionPlugin } from '@vueuse/motion'
                             </div>
                             <div
                                 class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full ">
-                                <span class="text-2xl text-white proj">SwampVision (Python, PyTorch,
+                                <span class="text-2xl text-white ">SwampVision (Python, PyTorch,
                                     Roboflow)</span>
                             </div>
                         </a>
@@ -115,7 +110,7 @@ import { MotionPlugin } from '@vueuse/motion'
                             </div>
                             <div
                                 class="absolute -bottom-full group-hover:bottom-4 transition-all duration-700 z-50 w-full ">
-                                <span class="text-2xl text-white proj">Overtone (OpenAI, AWS, Typescript)</span>
+                                <span class="text-2xl text-white ">Overtone (OpenAI, AWS, Typescript)</span>
                             </div>
                         </a>
 
@@ -213,7 +208,7 @@ body {
 
     font-weight: 800;
     color: transparent;
-    font-size: 40px;
+    font-size: 2.5vw;
     background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
     background-position: 40% 50%;
     -webkit-background-clip: text;
