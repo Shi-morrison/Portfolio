@@ -45,19 +45,21 @@ import { MotionPlugin } from '@vueuse/motion'
                     </div>
                     <div class=" flex flex-col items-center ">
 
-                        <p class="title">SWE Intern @ The Garage: <br> April 2023 - Present</p>
+                        <p class="title">Junior Software Engineer @ Almma.AI: <br> January 2024 - Present</p>
 
                         <br>
                         <p class="text-white text-2xl">•
-                            Performed coding, debugging, testing, and troubleshooting through the application development
-                            process.
+                            Implemented secure authentication mechanisms by integrating Azure AD B2C into Capable Almma , enhancing
+user verification processes and data security.
                             <br>•
 
-                            Designed and developed the web infrastructure including middle tier services.
+                            Developed and maintained robust APIs for collecting and storing user data in Azure Cosmos DB, ensuring efficient
+data management and scalability.
                             <br>•
-                            Contributed to back-end database development and the construction of SQL queries.
-                            <br>•
-                            Utilized .NET and C# to develop REST APIs for software applications.
+                            Introduced a multi prompt feature to the chat application, allowing the inclusion of multiple sub-prompts within a
+single parent prompt, thereby increasing the app’s functionality and user interaction flexibility.
+                            <!-- <br>•
+                            Utilized .NET and C# to develop REST APIs for software applications. -->
                         </p>
 
                     </div>
