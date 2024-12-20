@@ -50,7 +50,7 @@ single parent prompt, thereby increasing the app’s functionality and user inte
                     </div>
                     <div class=" flex flex-col items-center ">
 
-                        <p class="title">Software Development Intern @ Amazon Web Services: <br> June 2025 - Septemper 2025</p>
+                        <p class="title">Software Development Intern @ Amazon Web Services: <br> June 2024 - Septemper 2024</p>
 
                         <br>
                         <p class="text-white text-2xl">•
