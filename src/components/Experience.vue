@@ -30,34 +30,39 @@ import { MotionPlugin } from '@vueuse/motion'
 
                     <div class=" flex flex-col items-center ">
 
-                        <p class="title">SWE Intern @ Ellucian: <br> May 2023 - Aug 2023</p>
+                         <p class="title">Junior Software Engineer @ Almma.AI: <br> January 2024 - June 2025</p>
+
+                        <br>
                         <p class="text-white text-2xl">•
-                            Developed Serverless applications as part of the Solution Architect team using the AWS framework
-                            and tools such as AWS Lambda and AWS API gateway.
+                            Developed and deployed secure authentication mechanisms using Azure AD B2C, ensuring user data protection and
+compliance with modern security standards into Capable Almma
                             <br>•
-                            Created Full stack applications with React.js and Node.js and deployed using AWS CDK.
-                            <br>•
-                            Incorporated DynamoDB databases into software applications.
-                            <br>•
-                            Utilized Typescript and JavaScript to create APIs for software applications.
+
+                           Designed and optimized RESTful APIs to collect, store, and process user data in Azure Cosmos DB, enabling
+scalable and efficient data management for analytics.
+                            <!-- <br>•
+                            Introduced a multi prompt feature to the chat application, allowing the inclusion of multiple sub-prompts within a
+single parent prompt, thereby increasing the app’s functionality and user interaction flexibility. -->
+                            <!-- <br>•
+                            Utilized .NET and C# to develop REST APIs for software applications. -->
                         </p>
 
                     </div>
                     <div class=" flex flex-col items-center ">
 
-                        <p class="title">Junior Software Engineer @ Almma.AI: <br> January 2024 - Present</p>
+                        <p class="title">Software Development Intern @ Amazon Web Services: <br> June 2025 - Septemper 2025</p>
 
                         <br>
                         <p class="text-white text-2xl">•
-                            Implemented secure authentication mechanisms by integrating Azure AD B2C into Capable Almma , enhancing
-user verification processes and data security.
+                            Engineered an operations automation tool that streamlined manual tasks for on-call engineers by automating log
+retrieval, custom log queries, and metric graph generation, reducing operational inefficiencies by 30%.
                             <br>•
 
-                            Developed and maintained robust APIs for collecting and storing user data in Azure Cosmos DB, ensuring efficient
-data management and scalability.
-                            <br>•
+                            Delivered a fully deployed automation solution that enhanced operational workflows, resulting in measurable
+reductions in manual effort and improved system monitoring capabilities.
+                            <!-- <br>•
                             Introduced a multi prompt feature to the chat application, allowing the inclusion of multiple sub-prompts within a
-single parent prompt, thereby increasing the app’s functionality and user interaction flexibility.
+single parent prompt, thereby increasing the app’s functionality and user interaction flexibility. -->
                             <!-- <br>•
                             Utilized .NET and C# to develop REST APIs for software applications. -->
                         </p>
